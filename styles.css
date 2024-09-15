@@ -1,0 +1,710 @@
+/* Keep the existing styles for the reset */
+.rubik-mono-one-regular {
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+}  
+.dm-mono-light {
+    font-family: "DM Mono", monospace;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .dm-mono-regular {
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .dm-mono-medium {
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .dm-mono-light-italic {
+    font-family: "DM Mono", monospace;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .dm-mono-regular-italic {
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .dm-mono-medium-italic {
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("Topographic\ map\ background.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    margin: 20px auto;
+    width: fit-content; /* Adjusts width to fit content */
+    padding: 10px 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2em; /* Spacing between navigation items */
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-menu li {
+    margin: 0.5em;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    font-family: 'DM Mono', monospace;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: #E1B177;
+    padding: 10px 15px; /* Adds padding to the clickable area */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    background-color: #E1B177;
+    color: #000; /* Change text color on hover */
+    box-shadow: 0px 0px 15px rgba(225, 177, 119, 0.8);
+    border-radius: 5px;
+}
+
+.wrapper {
+    max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header {
+    display: flex;
+    flex-direction: column; /* Stack header elements vertically */
+    align-items: center; /* Centers the content horizontally */
+    justify-content: center; /* Centers vertically */
+    text-align: center; /* Center the text */
+    
+    /* Size and positioning */
+    height: 80vh; /* Takes 60% of the viewport height */
+    margin: 20px auto; /* Centered with margin around */
+    padding: 50px; /* Extra space inside the box */
+    width: 100%; /* Full width of the screen */
+    max-width: 1800px; /* Limit maximum width for large screens */
+    
+    /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    
+    /* Styling */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    color: white; /* White text for contrast */
+}
+
+
+header .name {
+    margin-bottom: 10px; /* Adds some spacing below the heading */
+    font-family: 'DM Mono';
+    font-weight: 500;
+    color: #E1B177;
+    font-size: 3em;
+}
+
+#job {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 2.5em;
+    color: #E1B177;
+    text-align: center;
+    transition: all 0.3s ease; /* Smooth transition */
+    font-size: 6em;
+}
+
+/* Glow effect on hover */
+#job:hover {
+    color: #E1B177; /* Change color when hovering */
+    text-shadow: 0 0 20px rgba(225, 177, 119, 0.8),
+                 0 0 30px rgba(225, 177, 119, 0.6),
+                 0 0 40px rgba(225, 177, 119, 0.4);
+}
+
+#location {
+    font-family: "DM Mono";
+    font-style: italic;
+    color: rgba(225, 177, 119, 0.4);
+    margin-top: 2em;
+}
+
+#about {
+    display: flex;
+    flex-direction: column; /* Stack header elements vertically */
+    align-items: center; /* Centers the content horizontally */
+    justify-content: center; /* Centers vertically */
+    text-align: center; /* Center the text */
+    
+    /* Size and positioning */
+    height: 30vh; /* Takes 60% of the viewport height */
+    margin: 20px auto; /* Centered with margin around */
+    padding: 50px; /* Extra space inside the box */
+    width: 100%; /* Full width of the screen */
+    max-width: 1800px; /* Limit maximum width for large screens */
+    
+    /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    
+    /* Styling */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    color: white; /* White text for contrast */
+}
+
+#about h2 {
+    margin-bottom: 10px; /* Adds some spacing below the heading */
+    font-family: 'DM Mono';
+    font-weight: 500;
+    color: #E1B177;
+    font-size: 2.5em;
+    margin-top: 15px;
+}
+
+#about .content {
+    margin-bottom: 10px; /* Adds some spacing below the heading */
+    font-family: 'DM Mono';
+    font-weight: 500;
+    color: #E1B177;
+    font-size: 1.4em;
+    margin-top: 30px;
+}
+
+#about .content a {
+    text-decoration: none;
+    color: #E1B177;
+}
+
+#about .content a:hover {
+    text-decoration: none;
+    background-color: #E1B177;
+    color: #000; /* Change text color on hover */
+    box-shadow: 0px 0px 15px rgba(225, 177, 119, 0.8);
+    border-radius: 5px;
+}
+
+#work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px; /* Adjusted padding for better spacing */
+    width: 100%;
+    max-width: 1800px;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+#work h2 {
+    font-family: 'DM Mono';
+    font-weight: 500;
+    color: #E1B177;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent white background for contrast */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    position: relative;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #E1B177;
+}
+
+.project-card h3 {
+    font-family: 'Rubik Mono One', monospace;
+    font-size: 1.8em;
+    color: #E1B177;
+    margin-bottom: 10px;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.project-description {
+    font-size: 1em;
+    color: rgba(225, 177, 119, 0.7);
+    line-height: 1.6;
+    margin-top: 10px;
+    font-family: 'DM Mono', monospace;
+    font-weight: 300;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1800px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+#contact li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 10px; /* Adds padding for better spacing */
+    border-radius: 8px; /* Rounded corners for hover effect */
+}
+
+#contact li:hover {
+    background-color: rgba(225, 177, 119, 0.1); /* Light background on hover */
+    transform: scale(1.02); /* Slightly enlarges the item */
+}
+
+#contact img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    transition: transform 0.3s ease; /* Smooth transition for image scaling */
+}
+
+#contact li:hover img {
+    transform: scale(1.1); /* Slightly enlarges the icon on hover */
+}
+
+#contact a {
+    color: #E1B177;
+    text-decoration: none;
+    font-family: 'DM Mono', monospace;
+    font-size: 1.2em;
+    margin-left: 10px;
+    transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+#contact a:hover {
+    color: #F2B250; /* Slightly lighter color on hover */
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #E1B177; /* Text color matching your theme */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Add padding around */
+    margin-top: 20px; /* Margin at the top */
+    font-family: 'DM Mono', monospace; /* Font for the footer text */
+    font-size: 1em; /* Font size */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+footer a {
+    color: #E1B177; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+
+/* Keep the existing styles for the reset */
+.rubik-mono-one-regular {
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+}  
+.dm-mono-light {
+    font-family: "DM Mono", monospace;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .dm-mono-regular {
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .dm-mono-medium {
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .dm-mono-light-italic {
+    font-family: "DM Mono", monospace;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .dm-mono-regular-italic {
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .dm-mono-medium-italic {
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("Topographic\ map\ background.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    margin: 20px auto;
+    width: fit-content; /* Adjusts width to fit content */
+    padding: 10px 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2em; /* Spacing between navigation items */
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-menu li {
+    margin: 0.5em;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    font-family: 'DM Mono', monospace;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: #E1B177;
+    padding: 10px 15px; /* Adds padding to the clickable area */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    background-color: #E1B177;
+    color: #000; /* Change text color on hover */
+    box-shadow: 0px 0px 15px rgba(225, 177, 119, 0.8);
+    border-radius: 5px;
+}
+
+.wrapper {
+    max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header {
+    display: flex;
+    flex-direction: column; /* Stack header elements vertically */
+    align-items: center; /* Centers the content horizontally */
+    justify-content: center; /* Centers vertically */
+    text-align: center; /* Center the text */
+    
+    /* Size and positioning */
+    height: 80vh; /* Takes 60% of the viewport height */
+    margin: 20px auto; /* Centered with margin around */
+    padding: 50px; /* Extra space inside the box */
+    width: 100%; /* Full width of the screen */
+    max-width: 1800px; /* Limit maximum width for large screens */
+    
+    /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    
+    /* Styling */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    color: white; /* White text for contrast */
+}
+
+
+header .name {
+    margin-bottom: 10px; /* Adds some spacing below the heading */
+    font-family: 'DM Mono';
+    font-weight: 500;
+    color: #E1B177;
+    font-size: 3em;
+}
+
+#job {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 2.5em;
+    color: #E1B177;
+    text-align: center;
+    transition: all 0.3s ease; /* Smooth transition */
+    font-size: 6em;
+}
+
+/* Glow effect on hover */
+#job:hover {
+    color: #E1B177; /* Change color when hovering */
+    text-shadow: 0 0 20px rgba(225, 177, 119, 0.8),
+                 0 0 30px rgba(225, 177, 119, 0.6),
+                 0 0 40px rgba(225, 177, 119, 0.4);
+}
+
+#location {
+    font-family: "DM Mono";
+    font-style: italic;
+    color: rgba(225, 177, 119, 0.4);
+    margin-top: 2em;
+}
+
+#about {
+    display: flex;
+    flex-direction: column; /* Stack header elements vertically */
+    align-items: center; /* Centers the content horizontally */
+    justify-content: center; /* Centers vertically */
+    text-align: center; /* Center the text */
+    
+    /* Size and positioning */
+    height: 30vh; /* Takes 60% of the viewport height */
+    margin: 20px auto; /* Centered with margin around */
+    padding: 50px; /* Extra space inside the box */
+    width: 100%; /* Full width of the screen */
+    max-width: 1800px; /* Limit maximum width for large screens */
+    
+    /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    
+    /* Styling */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    color: white; /* White text for contrast */
+}
+
+#about h2 {
+    margin-bottom: 10px; /* Adds some spacing below the heading */
+    font-family: 'DM Mono';
+    font-weight: 500;
+    color: #E1B177;
+    font-size: 2.5em;
+    margin-top: 15px;
+}
+
+#about .content {
+    margin-bottom: 10px; /* Adds some spacing below the heading */
+    font-family: 'DM Mono';
+    font-weight: 500;
+    color: #E1B177;
+    font-size: 1.4em;
+    margin-top: 30px;
+}
+
+#about .content a {
+    text-decoration: none;
+    color: #E1B177;
+}
+
+#about .content a:hover {
+    text-decoration: none;
+    background-color: #E1B177;
+    color: #000; /* Change text color on hover */
+    box-shadow: 0px 0px 15px rgba(225, 177, 119, 0.8);
+    border-radius: 5px;
+}
+
+#work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px; /* Adjusted padding for better spacing */
+    width: 100%;
+    max-width: 1800px;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+#work h2 {
+    font-family: 'DM Mono';
+    font-weight: 500;
+    color: #E1B177;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent white background for contrast */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    position: relative;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #E1B177;
+}
+
+.project-card h3 {
+    font-family: 'Rubik Mono One', monospace;
+    font-size: 1.8em;
+    color: #E1B177;
+    margin-bottom: 10px;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.project-description {
+    font-size: 1em;
+    color: rgba(225, 177, 119, 0.7);
+    line-height: 1.6;
+    margin-top: 10px;
+    font-family: 'DM Mono', monospace;
+    font-weight: 300;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1800px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+#contact li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 10px; /* Adds padding for better spacing */
+    border-radius: 8px; /* Rounded corners for hover effect */
+}
+
+#contact li:hover {
+    background-color: rgba(225, 177, 119, 0.1); /* Light background on hover */
+    transform: scale(1.02); /* Slightly enlarges the item */
+}
+
+#contact img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    transition: transform 0.3s ease; /* Smooth transition for image scaling */
+}
+
+#contact li:hover img {
+    transform: scale(1.1); /* Slightly enlarges the icon on hover */
+}
+
+#contact a {
+    color: #E1B177;
+    text-decoration: none;
+    font-family: 'DM Mono', monospace;
+    font-size: 1.2em;
+    margin-left: 10px;
+    transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+#contact a:hover {
+    color: #F2B250; /* Slightly lighter color on hover */
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #E1B177; /* Text color matching your theme */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Add padding around */
+    margin-top: 20px; /* Margin at the top */
+    font-family: 'DM Mono', monospace; /* Font for the footer text */
+    font-size: 1em; /* Font size */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+footer a {
+    color: #E1B177; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+
