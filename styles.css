@@ -705,3 +705,115 @@ footer a {
 footer a:hover {
     text-decoration: underline; /* Underline on hover */
 }
+
+/* Mobile First Approach */
+body {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+/* Header: Adjust font sizes and padding for smaller screens */
+header {
+    padding: 20px;
+}
+
+header .name {
+    font-size: 2em;
+}
+
+#job {
+    font-size: 4em;
+}
+
+#location {
+    font-size: 1.2em;
+}
+
+/* About Section */
+#about h2 {
+    font-size: 2em;
+}
+
+#about .content {
+    font-size: 1.2em;
+}
+
+/* Project Cards: Adjust size for smaller screens */
+.project-card {
+    max-width: 90%;
+    padding: 15px;
+}
+
+/* Footer */
+footer {
+    font-size: 0.9em;
+}
+
+/* Contact Section */
+#contact a {
+    font-size: 1em;
+}
+
+/* Tablet Screens (768px and above) */
+@media (min-width: 768px) {
+    header .name {
+        font-size: 2.5em;
+    }
+
+    #job {
+        font-size: 5em;
+    }
+
+    #about h2 {
+        font-size: 2.3em;
+    }
+
+    #about .content {
+        font-size: 1.3em;
+    }
+
+    .project-card {
+        max-width: 80%;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+
+    #contact a {
+        font-size: 1.1em;
+    }
+}
+
+/* Larger Screens (1024px and above) */
+@media (min-width: 1024px) {
+    header .name {
+        font-size: 3em;
+    }
+
+    #job {
+        font-size: 6em;
+    }
+
+    #about h2 {
+        font-size: 2.5em;
+    }
+
+    #about .content {
+        font-size: 1.4em;
+    }
+
+    .project-card {
+        max-width: 60%;
+    }
+
+    footer {
+        font-size: 1.1em;
+    }
+
+    #contact a {
+        font-size: 1.2em;
+    }
+}
+
