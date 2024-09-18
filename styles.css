@@ -817,3 +817,85 @@ footer {
     }
 }
 
+/* About Section */
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 1800px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+/* About Section Heading */
+#about h2 {
+    font-family: 'DM Mono';
+    font-weight: 500;
+    color: #E1B177;
+    font-size: 2.5em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* About Section Paragraph */
+#about .content {
+    font-family: 'DM Mono';
+    font-weight: 500;
+    color: #E1B177;
+    font-size: 1.4em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* Work Section */
+#work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    width: 100%;
+    max-width: 1800px;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+    #about {
+        padding: 20px 10px;
+        margin-bottom: 30px;
+    }
+
+    #about h2 {
+        font-size: 1.8em;
+    }
+
+    #about .content {
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
+
+    #work {
+        padding: 40px 10px;
+        margin-top: 20px;
+    }
+
+    .project-card {
+        max-width: 90%;
+        margin: 10px 0;
+    }
+}
+
+
